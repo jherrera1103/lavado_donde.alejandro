@@ -1,0 +1,235 @@
+/* =====================================================
+CONFIGURACIÓN GENERAL
+Reinicia márgenes y define la fuente principal
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+/* =====================================================
+CUERPO DEL SITIO
+Define color de fondo y color principal del texto
+===================================================== */
+body {
+background-color: #0f172a;
+color: #ffffff;
+line-height: 1.6;
+}
+
+/* =====================================================
+ENCABEZADO
+Barra superior fija con menú de navegación
+===================================================== */
+header {
+background-color: #0b0b0b;
+padding: 25px 50px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+/* =====================================================
+MENÚ DE NAVEGACIÓN
+Organiza logo y enlaces horizontalmente
+===================================================== */
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Lista del menú */
+.nav ul {
+display: flex;
+list-style: none;
+}
+
+/* Espaciado entre opciones */
+.nav ul li {
+margin-left: 20px;
+}
+
+/* Estilo de enlaces */
+.nav ul li a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 600;
+}
+
+/* Efecto al pasar el mouse */
+.nav ul li a:hover {
+color: #00adb5;
+}
+
+/* =====================================================
+LOGO DE LA EMPRESA
+Controla tamaño y posición del logo
+===================================================== */
+.logo-container {
+display: flex;
+align-items: center;
+}
+
+.logo-img {
+height: 120px;
+width: auto;
+object-fit: contain;
+}
+
+/* =====================================================
+CONTENIDO PRINCIPAL
+===================================================== */
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+/* Diseño de las secciones */
+section {
+margin-bottom: 40px;
+background-color: #1e293b;
+padding: 30px;
+border-radius: 8px;
+}
+
+/* Títulos principales */
+h2 {
+color: #38bdf8;
+margin-bottom: 20px;
+}
+
+/* Subtítulos */
+h3 {
+color: #ffffff;
+margin-bottom: 10px;
+}
+
+/* =====================================================
+BANNER DE SERVICIOS
+Imagen promocional principal
+===================================================== */
+.servicios-banner {
+width: 100%;
+max-width: 700px;
+margin: 0 auto 25px auto;
+overflow: hidden;
+border-radius: 8px;
+}
+
+.banner-img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* =====================================================
+TARJETAS DE SERVICIOS
+Presentación visual de los servicios
+===================================================== */
+.servicios-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+}
+
+.servicio-tarjeta {
+background-color: #393e46;
+padding: 20px;
+border-radius: 6px;
+border-top: 4px solid #00adb5;
+}
+
+/* =====================================================
+BOTÓN DE WHATSAPP
+===================================================== */
+.btn-whatsapp {
+display: inline-block;
+background-color: #25d366;
+color: #ffffff;
+padding: 12px 24px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* =====================================================
+GALERÍA DE IMÁGENES
+Organiza las fotografías en cuadrícula
+===================================================== */
+.galeria {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 15px;
+}
+
+.galeria img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 8px;
+border: 2px solid #00adb5;
+transition: transform 0.3s;
+}
+
+/* Efecto zoom al pasar el mouse */
+.galeria img:hover {
+transform: scale(1.50);
+}
+
+/* =====================================================
+PIE DE PÁGINA
+===================================================== */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #0b0b0b;
+}
+
+/* =====================================================
+DISEÑO RESPONSIVE
+Adaptación para celulares y tablets
+===================================================== */
+@media (max-width: 768px) {
+.nav {
+flex-direction: column;
+}
+}
+
+/* =====================================================
+FORMULARIO DE CONTACTO
+Organiza los campos del formulario en forma vertical
+para que se vean ordenados uno debajo del otro
+===================================================== */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+/* =====================================================
+ETIQUETAS DEL FORMULARIO
+Agrega espacio entre el texto de cada campo
+y el lugar donde el usuario escribe la información
+===================================================== */
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* =====================================================
+CAMPOS DEL FORMULARIO
+Hace que input, textarea y select ocupen todo
+el ancho disponible dentro del formulario
+===================================================== */
+input,
+textarea,
+select {
+    width: 100%;
+}

@@ -1,0 +1,120 @@
+<!-- =====================================================
+     DOCUMENTO HTML
+     Define que este archivo utiliza HTML5
+===================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración de caracteres para tildes y ñ -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que la página se adapte a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Contacto - Donde Alejandro</title>
+
+    <!-- Conexión con el archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     ENCABEZADO
+     Contiene el logo y el menú de navegación
+===================================================== -->
+<header>
+    <nav class="nav">
+
+        <!-- Logo de la empresa -->
+        <div class="logo-container">
+            <img src="LOGO LAVADO/logo.jpg" alt="Logo Donde Alejandro" class="logo-img">
+        </div>
+
+        <!-- Menú para navegar entre las páginas del sitio -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<!-- =====================================================
+     CONTENIDO PRINCIPAL
+     Aquí se encuentra el formulario y los datos de contacto
+===================================================== -->
+<main>
+
+    <!-- Sección del formulario de contacto -->
+    <section>
+        <h2>Formulario de Contacto</h2>
+
+        <!-- Formulario para que el cliente ingrese sus datos -->
+        <form>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" required>
+
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" required>
+
+            <label>Servicio solicitado:</label>
+            <select name="servicio">
+                <option>Lavado exterior</option>
+                <option>Lavado completo</option>
+                <option>Lavado de tapiz</option>
+                <option>Lavado de motor</option>
+            </select>
+
+            <label>Mensaje:</label>
+            <textarea name="mensaje" rows="5"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección con información de contacto y redes sociales -->
+    <section>
+        <h2>Contacto y Ubicación</h2>
+
+        <p>📍 <strong>Dirección:</strong> Av. Los Libertadores #149, El Monte</p>
+        <p>⏰ <strong>Horario:</strong> Lunes a Domingo: 9:00 a 19:00 Hrs</p>
+
+        <!-- Enlace directo a WhatsApp -->
+        <a href="https://wa.me/56920976775" class="btn-whatsapp" target="_blank">
+            💬 Escríbenos por WhatsApp
+        </a>
+
+        <!-- Enlace externo a Instagram -->
+        <p>📸 <strong>Instagram:</strong>
+            <a href="https://instagram.com" class="link-redes" target="_blank">
+                @lavadodondealejandro
+            </a>
+        </p>
+
+        <!-- Enlace externo a Facebook -->
+        <p>👤 <strong>Facebook:</strong>
+            <a href="https://facebook.com" class="link-redes" target="_blank">
+                Lavado Donde Alejandro
+            </a>
+        </p>
+    </section>
+
+</main>
+
+<!-- =====================================================
+     PIE DE PÁGINA
+     Muestra los derechos de autor del sitio
+===================================================== -->
+<footer>
+    <p>&copy; 2026 Lavado de Autos Donde Alejandro</p>
+</footer>
+
+</body>
+</html>
